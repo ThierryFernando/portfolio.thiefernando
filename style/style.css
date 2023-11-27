@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+@import url( 'https://fonts.google.com/specimen/Black+Ops+One?preview.size=36' );
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+        height: 100vh;
+        box-sizing: border-box;
+        color: antiquewhite;
+        background: linear-gradient(to bottom, #271401, #813b0c, #be770b);
+           /* Define o tamanho de fundo para cobrir toda a área disponível */
+    background-size: cover;
+
+    /* Impede a repetição do plano de fundo ao longo dos eixos */
+    background-repeat: no-repeat;
+
+    /* Fixa o plano de fundo para que ele não role com o conteúdo da página */
+    background-attachment: fixed;
+
+    /* Remove margens para o corpo */
+    margin: 0;
+
+    /* Define a cor do texto dentro do corpo como branco */
+    color: white;
+}
+
+
+
+.titulo-destaque {
+        color: #ffae00;}
+        
+
+.conteudo {
+    /* Define a altura do elemento como automática (ajustada ao conteúdo) */
+    height: auto;
+
+    /* Define a direção dos elementos filhos como coluna (de cima para baixo) */
+    flex-direction: column;
+
+    /* Define uma margem ao redor do elemento de 10% */
+    margin: 10%;
+
+    /* Transforma o elemento em um contêiner flexível */
+    display: flex;
+
+    /* Alinha os itens verticalmente no centro do contêiner */
+    align-items: center;
+
+    /* Distribui o espaço restante entre os itens horizontalmente */
+    justify-content: space-between;
+}
+
+.apresentacao-conteudo {
+    /* Define a largura do elemento como 615px */
+    width: 615px;
+
+    /* Transforma o elemento em um contêiner flexível com direção de coluna */
+    display: flex;
+    flex-direction: column;
+
+    /* Centraliza verticalmente os elementos dentro do contêiner */
+    justify-content: center;
+
+    /* Centraliza horizontalmente os elementos dentro do contêiner */
+    align-items: center;
+
+    /* Centraliza o alinhamento do texto dentro do contêiner */
+    text-align: center;
+
+    /* Define a altura do elemento como automática (ajustada ao conteúdo) */
+    height: auto;
+
+    /* Define o espaçamento entre os elementos filhos como 40px */
+    gap: 40px;
+
+    /* Define a ordem do elemento como 2 na ordem de exibição */
+    order: 2;
+}
+
+.apresentacao-conteudo-titulo {
+        /* Define o tamanho da fonte como 36px */
+        font-size: 36px;
+    
+        /* Define a família de fontes como 'Krona One' com fallback para sans-serif */
+        font-family: 'Krona One', sans-serif;
+    
+        /* Alinha o texto justificado */
+        text-align: justify;
+    }
+    
+    /* Estilos para elementos com a classe .apresentacao-conteudo-paragrafo */
+    .apresentacao-conteudo-paragrafo {
+        /* Define o tamanho da fonte como 24px */
+        font-size: 24px;
+    
+        /* Define a família de fontes como 'Montserrat' com fallback para sans-serif */
+        font-family: 'Krona One', sans-serif;
+    
+        /* Alinha o texto justificado */
+        text-align: justify;
+
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+
+
+    
+/* Estilos para elementos com a classe .apresentacao-conteudo-paragrafo */
+.apresentacao-conteudo-texto {
+    /* Define o tamanho da fonte como 24px */
+    font-size: 17px;
+
+    /* Define a família de fontes como 'Montserrat' com fallback para sans-serif */
+    font-family: 'Krona One', sans-serif;
+
+    /* Alinha o texto justificado */
+    text-align: justify;
+
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+    
+    
+    /* Iniciando estilização da ancora1 (botao1) */
+    
+    /* Estilos para elementos com a classe .apresentacao-links */
+    .apresentacao-links {
+        /* Define a largura do elemento como 500px */
+        width: 500px;
+    
+        /* Transforma o elemento em um contêiner flexível com direção de coluna */
+        display: flex;
+        flex-direction: column;
+    
+        /* Centraliza horizontalmente os elementos dentro do contêiner */
+        align-items: center;
+    
+        /* Define o espaçamento entre os elementos filhos como 20px */
+        gap: 20px;
+    }
+
+.apresentacao-links-conteudo  {
+font-family: 'Krona One', sans-serif;
+font-weight: 400;
+font-size: 24px;
+
+    }
+
+.botao {
+        background-color: rgb(252, 93, 1);
+        color: rgb(255, 255, 255);
+        width: 200px;
+        text-align: center;
+        border-radius: 50px;
+        font-size: 30px;
+        padding: 15px 0;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        border: 3px solid #ffffff;
+        cursor: pointer;
+        margin-left: 10px;
+        margin-right: 10px;
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s ease; 
+      
+    }
+    
+    .botao:hover {
+        transform: scale(1.1); 
+    }
+    
+    .botao::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0; 
+        width: 0;
+        height: 100%;
+        background: linear-gradient(45deg, transparent, #f3d965);
+        transition: 0.2s;
+    }
+    
+    .botao:hover::before {
+        width: 100%; 
+    }
+    
+    .botao i {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 60px; 
+    }
+
+    
+.imagem{
+        max-width: 100%;
+        width: 350px;
+        height: 480px;
+        overflow: hidden;
+        border-radius: 10%;
+        border: 5px solid #e75c00;
+        padding: 12px;
+        display: inline-block;
+        box-shadow: 15px 10px 15px 15px rgba(255, 123, 0, 0.5);
+        filter: brightness(0.8);
+        order:1;
+        
+}
+
+.rodape{
+color: white;
+background-color: #f18100;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+font-family: 'krona one', sans-serif;
+font-size: 18px;
+font-weight: 400;
+padding: 20px;
+}
+
+.rodape a:hover{
+    color: #000000;
+}
+
+.rodapelink { 
+
+    color: #042433;
+
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho-menu-links{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(255, 187, 0);
+    text-decoration: none;
+}
+
